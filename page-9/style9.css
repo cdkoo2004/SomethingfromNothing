@@ -1,0 +1,59 @@
+body {
+    height: 2000px; /* Make the page tall to allow scrolling */
+    background-color: rgb(220, 206, 195);
+    background: repeating-linear-gradient(
+        to bottom,      /* Direction of the lines (vertical lines) */
+        #6a6a6a,        /* Line color */
+        #000000 0.5px,    /* Line thickness */
+        transparent 0.5px, /* Space between lines */
+        transparent 50px /* Distance between the lines */
+    );
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 6em; 
+    font-weight: normal;
+    text-align: right;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.scroll-text {
+    font-size: 6rem;
+    font-family: 'Cedarville Cursive', cursive;
+    opacity: 0;
+    position: absolute; /* Allows animation */
+    animation: fadeIn 8s forwards; /* Animation to make it fade in */
+    margin-top: 400px; /* Adjust this for when the word appears on scroll */
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Starts lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends in original position */
+    }
+}
+
+.scroll-text a {
+    text-decoration: none; /* Remove underline from the anchor */
+    color: black; /* Set the color */
+}
+
+.scroll-text {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 30%; /* Position it a bit from the top when you scroll */
+    right: 20px; /* Align the element from the right */
+}
+
+.away {
+    font-family: "Gilda Display", serif;
+    text-align: right; /* Align text to the right */
+}

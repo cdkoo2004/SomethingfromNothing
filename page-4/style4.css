@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(255, 255, 255);
+        background: repeating-linear-gradient(
+            to bottom,     
+            #6a6a6a,        
+            #000000 0.5px,   
+            transparent 0.5px, 
+            transparent 50px,
+        );
+    }
+
+
+
+h3 { 
+
+font-family: 'Cedarville Cursive', serif;
+    font-size: 6rem;
+    margin-top: 1rem;  
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+
+}
+
+@keyframes float-text {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); Moves up}
+    100% { transform: translateY(-70);}
+
+}
+
+.float-text {
+    display: inline-block;  
+    color: rgb(222, 222, 222);
+    animation: float-text 3s ease-in-out infinite;
+}
+
+.float-text a {
+text-decoration: none;
+color: inherit;
+}
+
+a {
+    font-family: "gilda display", serif;
+}

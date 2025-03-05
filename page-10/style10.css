@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hover-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hover-link {
+    color: black; 
+    font-family: "Cedarville Cursive", serif;
+    font-size: 9em; 
+    text-decoration: none; 
+    display: inline-block; /* Allows transformation */
+    transition: transform 0.5s ease-in-out; /* Smooth animation */
+}
+
+.hover-link:hover {
+    transform: translateX(300px); /* Moves text 100px to the right */
+}
+
+.gilda-font {
+    font-family: 'Gilda Display', serif; /* Apply Gilda Display font */
+    font-size: 8rem; /* Adjust size as needed */
+    font-weight: normal; /* Make it bold if desired */
+    color: #ff0000; /* Adjust text color if needed */
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.gilda-font:hover {
+    transform: scale(1.1); /* Add hover effect if desired */
+}

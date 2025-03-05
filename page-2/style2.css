@@ -1,0 +1,24 @@
+body {
+    background-color: black;  
+}
+
+h2 {
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 18rem;
+    margin-top: 10rem;  
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    color: rgb(0, 0, 0); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
+h2:hover {
+    transform: scale(1.1);  
+    color: #ffffff;  
+}
+
+a {
+    text-decoration: none;
+}

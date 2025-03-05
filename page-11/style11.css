@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100vh; /* Ensures the body takes the full height of the screen */
+    overflow: hidden; /* Prevents scrollbars from appearing */
+    position: relative; /* Makes the positioning of pseudo-elements relative to the body */
+    transition: background-color 0.5s ease-in-out;
+}
+
+h1 {
+    font-family: "Gilda display", serif;
+    color: black;
+    font-size: 9rem;
+    text-decoration:none;
+    margin-top: 18rem;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+
+}
+
+.home {
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    font-family: "cedarville cursive", serif;
+    position: relative;
+    text-decoration: none;
+}
+
+.home:hover {
+    transform: scale(3);
+    color: rgb(255, 160, 51);
+    text-decoration: none;
+}
+
+img {
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 30px;
+}
+
+.home:hover img {
+    display: inline-block;
+    color: rgb(255, 160, 51);
+    text-decoration:none;
+}
+
+/* Pseudo-element for stars background effect (for one star image) */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('star.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    pointer-events: none; /* Ensures the stars don't interfere with interactions */
+    animation: scatter 10s infinite;
+}
+
+/* Keyframes to create a scattered animation for the stars */
+@keyframes scatter {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+/* Add Gilda Display font style for the word "again" */
+.gilda-font {
+    font-family: 'Gilda Display', serif; /* Apply the Gilda Display font */
+    font-size: 0.7em; /* Adjust size if needed */
+    font-weight: normal; /* Make it bold if desired */
+}
+
+/* Additional styling to display multiple stars in the background */
+.stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures the stars don't interfere with interactions */
+    z-index: -1; /* Keeps stars behind other elements */
+}
+
+.star-image {
+    position: absolute;
+    width: 50px; /* Adjust the size of each star */
+    animation: star-movement 10s infinite;
+}
+
+/* Keyframes to move the stars around randomly */
+@keyframes star-movement {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(100px, 100px); /* Move stars to random positions */
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

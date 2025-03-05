@@ -1,0 +1,51 @@
+h7 {
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 6rem;
+    margin-top: 20rem;  
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    color: rgb(0, 0, 0); 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 20rem;
+    font-family: 'Cedarville Cursive';
+    font-size: 9rem;
+    margin-top: 30em;
+    text-align: center;
+}
+
+.typewriter p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: 2px;
+    font-size: 6rem;
+    margin-top: 20rem;
+    font-family: "Cedarville Cursive";
+    text-align: center;
+    animation: typing 2s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+.stop-word {
+    font-family: 'Gilda Display', serif; /* Apply Gilda Display font to the word "stop" */
+    font-weight: normal;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

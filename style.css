@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+    hr {
+        border: none;
+        height: 2px;
+        background-color: black;
+        margin: 10px 1;
+    }
+    
+
+h1 {
+    color: black;
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 8rem;
+    margin-top: 18rem;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+    text-align: center; 
+    width: 100%;
+}
+
+h1:hover {
+    transform: scale(1.1); 
+    color: #f40000; 
+}

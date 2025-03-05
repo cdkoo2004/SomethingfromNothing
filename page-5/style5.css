@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 6em; 
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    color: rgb(115, 115, 115);
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+h4 span {
+    display: inline-block;
+    opacity: 0; 
+    animation: appear 0.5s forwards;   
+    margin-right: 5px; 
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+h4 span:nth-child(1) { animation-delay: 0s; }
+h4 span:nth-child(2) { animation-delay: 0.1s; }
+h4 span:nth-child(3) { animation-delay: 0.2s; }
+h4 span:nth-child(4) { animation-delay: 0.3s; }
+h4 span:nth-child(5) { animation-delay: 0.4s; }
+h4 span:nth-child(6) { animation-delay: 0.5s; }
+h4 span:nth-child(7) { animation-delay: 0.6s; }
+h4 span:nth-child(8) { animation-delay: 0.7s; }
+h4 span:nth-child(9) { animation-delay: 0.8s; }
+
+
+
+h5 {
+        font-family: 'Cedarville Cursive', serif;
+        font-size: 9em;
+        display: block;
+        margin-top: 3rem;  
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        opacity: 1; 
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cedar-font {
+    font-family: 'Cedarville Cursive', sans-serif;
+    color: white;
+    display: inline-block;
+    animation: moveDownFast 0.7s ease-in forwards;
+    animation-delay: 1s; /* Change this if you want it faster */
+}
+
+
+@keyframes moveDownFast {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(700px); 
+    }
+}
+
+a {
+    font-family: "gilda diplay", italic;
+    font-size: 7rem;
+    color:rgb(255, 255, 255)
+}
